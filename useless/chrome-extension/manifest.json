@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Jade Student Interface",
+    "description": "This is a user interface that will track students attention spans once students being working on an assignment",
+    "version": "1.0", 
+
+    "browser_action": {
+      "default_popup": "main.html"
+    },
+
+    "background": {
+      "scripts": ["script.js"],
+      "persistent": false
+    },
+
+    "permissions": [
+      "activeTab"
+    ],
+
+    "content_security_policy": "script-src 'self' https://code.jquery.com; object-src 'self'"
+
+}
